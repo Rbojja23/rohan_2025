@@ -1,30 +1,6 @@
----
-layout: base
-title: Student Home 
-description: Home Page
-image: /images/mario_animation.png
-hide: true
----
-
-My journey starts here.
-# Rohan Bojja Student Webpage from GitHub  🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧
-
-My poem: 
-Roses are red
-Violets are blue
-God made me beutiful
-I guess he forgot about you
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Michael_Jackson_in_1988.jpg/220px-Michael_Jackson_in_1988.jpg" 
-onclick="document.getElementById('michael-jackson-hee-hee-made-with-Voicemod.mp3').play();">
-
-
 <!-- Liquid:  statements -->
 
-<!-- Include submenu from _includes to top of pages -->
-{% include nav/home.html %}
-<!--- Concatenation of site URL to frontmatter image  --->
-{% assign sprite_file = site.baseurl | append: page.image %}
+
 <!--- Has is a list variable containing mario metadata for sprite --->
 {% assign hash = site.data.mario_metadata %}  
 <!--- Size width/height of Sprit images --->
