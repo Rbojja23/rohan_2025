@@ -6,18 +6,6 @@ image: /images/mario_animation.png
 hide: true
 ---
 
-My journey starts here.
-# Rohan Bojja Student Webpage from GitHub  🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧🦧
-
-My poem: 
-Roses are red
-Violets are blue
-God made me beutiful
-I guess he forgot about you
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Michael_Jackson_in_1988.jpg/220px-Michael_Jackson_in_1988.jpg" 
-onclick="document.getElementById('michael-jackson-hee-hee-made-with-Voicemod.mp3').play();">
-
 
 <!-- Liquid:  statements -->
 
