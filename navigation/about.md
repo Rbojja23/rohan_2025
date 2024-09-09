@@ -1,29 +1,24 @@
 ---
 layout: page
-title: About Us
+title: Rohan Bojja Student Webpage
 permalink: /about/
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohan Bojja Student Webpage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet"> <!-- Font Import -->
-    <style>
-        /* Styling */
-        body {
-            background: linear-gradient(135deg, #6e45e2, #88d3ce);
-            color: white;
-            font-family: 'Caveat', 'Courier New', monospace;
-            text-align: center;
-            margin: 0;
-        }
 
-        h1 {
-            margin-top: 50px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet"> <!-- Font Import -->
+<style>
+    /* Styling */
+    body {
+        background: linear-gradient(135deg, #6e45e2, #88d3ce);
+        color: white;
+        font-family: 'Caveat', 'Courier New', monospace;
+        text-align: center;
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
 
         .flag-container {
             display: flex;
@@ -56,23 +51,23 @@ permalink: /about/
             max-width: 600px;
             font-size: 1.5em;
         }
-    </style>
-</head>
-<body>
-    <h1>Rohan Bojja Student Webpage</h1>
+</style>
 
-    <!-- Description Box -->
-    <div class="description-box">
+
+<h1>Rohan Bojja Student Webpage</h1>
+
+<!-- Description Box -->
+<div class="description-box">
         Hi! I am Rohan Bojja, a sophomore at Del Norte High School. I am currently a part of AP Computer Science Principles. 
         I took this class to widen my knowledge about the different aspects of coding, such as using GitHub and HTML. 
         I hope you enjoy my website!
-    </div>
+</div>
 
-    <div class="flag-container" id="flagContainer">
+<div class="flag-container" id="flagContainer">
         <!-- JavaScript will insert flag images here -->
-    </div>
+</div>
 
-    <script>
+<script>
         // 1. Connect to the HTML div container
         var container = document.getElementById("flagContainer");
 
@@ -90,5 +85,4 @@ permalink: /about/
             container.appendChild(flagItem);
         });
     </script>
-</body>
-</html>
+

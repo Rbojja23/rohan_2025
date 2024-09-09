@@ -20,6 +20,12 @@ hide: true
 
 <!--- HTML for page contains <p> tag named "Mario" and class properties for a "sprite"  -->
 
+
+<h2>Cookie Clicker</hs>
+
+<button id="granny" onclick="shopbtn()"></button>
+
+
 <p id="mario" class="sprite"></p>
   
 <!--- Embedded Cascading Style Sheet (CSS) rules, 
@@ -42,6 +48,14 @@ hide: true
     background-position: calc({{animations[0].col}} * {{pixels}} * -1px) calc({{animations[0].row}} * {{pixels}}* -1px);
   }
 </style>
+
+<script>
+  function shopbtn(){
+    rate = 1
+    btn = docuemnt.getElementById("btn")
+    rate += 2
+  }
+</script>
 
 <!--- Embedded executable code--->
 <script>
