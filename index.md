@@ -21,12 +21,16 @@ hide: true
 <!--- HTML for page contains <p> tag named "Mario" and class properties for a "sprite"  -->
 
 
-<h2>Cookie Clicker</hs>
-
-<button id="granny" onclick="shopbtn()"></button>
-
-
 <p id="mario" class="sprite"></p>
+
+<h2>Cookie Clicker</h2>
+<img id="cookie" onclick="cookiePress()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/250px-2ChocolateChipCookies.jpg">
+<h3 id="counter">Counter:</h3>
+<h3 id="rate">Cookie Rate:</h3>
+<h3 id="grandma-list">Grandma Army: </h3>
+<div>
+  <button onclick="grandmaPress()" id="grandma-btn">Grandma Power</button>
+</div>
   
 <!--- Embedded Cascading Style Sheet (CSS) rules, 
         define how HTML elements look 
@@ -203,4 +207,58 @@ hide: true
     mario.startResting();
   });
 
+</script>
+
+<script>
+  // counter_value = 0;
+  if (localStorage.getItem("counter_value") === null) {
+    localStorage.setItem("counter_value", 0);
+    localStorage.setItem("cookie_rate", 1);
+  }
+
+  function cookiePress(){
+    // counter_value = Number(counter_value) + 1
+    counter_storage = localStorage.getItem("counter_value");
+    cookie_rate = localStorage.getItem("cookie_rate");
+    localStorage.setItem("counter_value", Number(counter_storage) + Number(cookie_rate));
+
+    counter = document.getElementById("counter");
+    counter.innerHTML = `Counter: ${Number(counter_storage) + Number(cookie_rate)}`
+
+    var audio = new Audio('assets/crunch.mp3');
+    audio.play();
+  }
+
+  function grandmaPress(){
+    var grandma_increase = 5;
+    var grandma_price = 10;
+    counter_storage = localStorage.getItem("counter_value");
+    cookie_rate = localStorage.getItem("cookie_rate");
+    localStorage.setItem("cookie_rate", Number(cookie_rate) + grandma_increase);
+
+    if (Number(counter_storage) > grandma_price) {
+      rate = document.getElementById("rate");
+      counter = document.getElementById("counter");
+
+      rate.innerHTML = `Cookie Rate: ${Number(cookie_rate) + grandma_increase}`;
+
+      localStorage.setItem("counter_value", Number(counter_storage) - grandma_price);
+      counter.innerHTML = `Counter: ${Number(counter_storage) - grandma_price}`
+      grandma_number = (Number(cookie_rate) + grandma_increase - 1)/5
+      grandmaArmy_string = "👵".repeat(grandma_number);
+      document.getElementById("grandma-list").innerHTML = `Grandma Army: ${grandmaArmy_string}`
+    }
+  }
+
+  window.onload = function() {
+    var counter_storage = localStorage.getItem("counter_value");
+    var cookie_rate = localStorage.getItem("cookie_rate");
+    document.getElementById("counter").innerHTML = `Counter: ${counter_storage}`;
+    document.getElementById("rate").innerHTML = `Cookie Rate: ${cookie_rate}`;
+
+    var grandma_increase = 5;
+    grandma_number = (Number(cookie_rate) + grandma_increase - 1)/5
+    grandmaArmy_string = "👵".repeat(grandma_number);
+    document.getElementById("grandma-list").innerHTML = `Grandma Army: ${grandmaArmy_string}`
+  };
 </script>
