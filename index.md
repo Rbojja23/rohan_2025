@@ -230,7 +230,7 @@ hide: true
   }
 
   function grandmaPress(){
-    var grandma_increase = 5;
+    var grandma_increase = 100;
     var grandma_price = 10;
     counter_storage = localStorage.getItem("counter_value");
     cookie_rate = localStorage.getItem("cookie_rate");

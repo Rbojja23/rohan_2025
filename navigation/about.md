@@ -129,6 +129,10 @@ permalink: /about/
     });
 </script>
 
+<h2> My Love of Video Games </h2>
+<embed src="https://www.google.com/logos/2010/pacman10-i.html" style="width:484; height: 208;">
+
+
 <h2>My Background Story</h2>
 
 **Born**: April 23, 2009
