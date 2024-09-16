@@ -258,7 +258,7 @@ hide: true
 
     var grandma_increase = 5;
     grandma_number = (Number(cookie_rate) + grandma_increase - 1)/5
-    grandmaArmy_string = "👵".repeat(grandma_number);
+    grandmaArmy_string = "👵" + int(grandma_number);
     document.getElementById("grandma-list").innerHTML = `Grandma Army: ${grandmaArmy_string}`
   };
 </script>
