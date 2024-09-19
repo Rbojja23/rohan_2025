@@ -215,6 +215,15 @@ path {
   stroke-linejoin: round;
 }
 
+<script src="https://utteranc.es/client.js"
+        repo="Rbojja23/rohan_2025"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script> 
+
 <script>
 var paths = [
   {id: '#path5419', d: 'm 574.27172,479 0,-15.65736 -32.82996,4.54569 z'},
@@ -340,12 +349,3 @@ timeline
     offset: 2000 + 10 * paths.length
   });
 <script>
-
-<script src="https://rbojja23.github.io/rohan_2025/"
-        repo="Rbojja23/rohan_2025"
-        issue-term="title"
-        label="blogpost-comment"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
