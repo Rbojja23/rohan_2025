@@ -80,7 +80,7 @@ permalink: /about/
 
 
 <div class="description-box">
-    Hi! I am Rohan Bojja. Enjoy my website!
+    <i>Hi! I am Rohan Bojja. Enjoy my website!</i>
 </div>
 
 
