@@ -23,7 +23,18 @@ hide: true
 
 <p id="mario" class="sprite"></p>
 
-<h2>Cookie Clicker</h2>
+<style>
+  .fade-rotate {
+    animation: fadeInRotate 2s forwards;
+  }
+
+  @keyframes fadeInRotate {
+    0% { opacity: 0; transform: rotate(0deg); }
+    100% { opacity: 1; transform: rotate(360deg); }
+  }
+</style>
+
+<h1 class="fade-rotate">Cookie Clicker!</h1>
 <img id="cookie" onclick="cookiePress()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2ChocolateChipCookies.jpg/250px-2ChocolateChipCookies.jpg">
 <h3 id="counter">Counter:</h3>
 <h3 id="rate">Cookie Rate:</h3>
