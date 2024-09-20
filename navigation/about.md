@@ -78,10 +78,18 @@ permalink: /about/
     }
 </style>
 
+<style>
+  .fade-in {
+    animation: fadeIn 2s forwards;
+  }
 
-<div class="description-box">
-    <i>Hi! I am Rohan Bojja. Enjoy my website!</i>
-</div>
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+
+<h1 class="fade-in">Welcome to My Website!</h1>
 
 
 <h2>My Hobbies</h2>
