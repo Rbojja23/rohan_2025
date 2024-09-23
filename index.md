@@ -48,6 +48,74 @@ hide: true
 --->
 <style>
 
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: blue;
+}
+
+body.dark-mode a {
+  color: white;
+}
+
+.page-header {
+  background-color: #f5f5f5;
+  color: black;
+}
+
+body.dark-mode .page-header {
+  background-color: black;
+  color: white;
+}
+
+.btn {
+  background-color: #eeeeee;
+  color: black;
+  border: 2px solid black;
+}
+
+body.dark-mode .btn {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Dark mode styles for code blocks, tables, etc. */
+body.dark-mode code {
+  background-color: #333333;
+  color: white;
+}
+
+body.dark-mode pre {
+  background-color: #333333;
+  color: white;
+  border-color: #555555;
+}
+
+body.dark-mode blockquote {
+  color: white;
+  border-left-color: #555555;
+}
+
+body.dark-mode hr {
+  background-color: #555555;
+}
+
+body.dark-mode table {
+  border-color: #555555;
+}
+
+body.dark-mode th, body.dark-mode td {
+  border-color: #555555;
+}
+
+body.dark-mode .site-footer {
+  border-top-color: #555555;
+}
+
   /*CSS style rules for the id and class of the sprite...
   */
   .sprite {
@@ -272,4 +340,15 @@ hide: true
     grandmaArmy_string = "👵" + int(grandma_number);
     document.getElementById("grandma-list").innerHTML = `Grandma Army: ${grandmaArmy_string}`
   };
+</script>
+
+
+<button id="toggle-dark-mode">Toggle Dark Mode</button>
+
+<script>
+  const toggleDarkMode = () => {
+    document.body.classList.toggle('dark-mode');
+  };
+
+  document.getElementById('toggle-dark-mode').addEventListener('click', toggleDarkMode);
 </script>
