@@ -138,7 +138,7 @@ permalink: /about/
 </script>
 
 <h2> My Love of Video Games </h2>
-<embed src="https://next.junni.co.jp" style="width:1440; height: 1440;">
+<embed src="https://www.nytimes.com/games/connections" style="width:1440; height: 1440;">
 
 
 <h2>My Background Story</h2>
