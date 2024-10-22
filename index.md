@@ -7,6 +7,188 @@ hide: true
 ---
 
 
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .box {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        text-decoration: none;
+        color: black;
+        transition: background-color 0.3s;
+    }
+
+    .box:hover {
+        background-color: #e0e0e0;
+    }
+
+    .dropdown-text {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 5px;
+        z-index: 1;
+        white-space: nowrap;
+    }
+
+    .box:hover .dropdown-text {
+        display: block;
+    }
+</style>
+
+<div class="grid-container">
+    <a href="https://rbojja23.github.io/rohan_2025/2024/09/05/Sprint2A-PopCornHAcks_IPYNB_2_.html#section3-1" class="box">
+        Variables
+        <div class="dropdown-text">
+            > Store data values
+            <br>
+            > Holding information
+        </div>
+    </a>
+
+    <a href="https://rbojja23.github.io/rohan_2025/2024/09/05/Sprint2A-PopCornHAcks_IPYNB_2_.html#section3-2" class="box">
+        Data Abstraction
+        <div class="dropdown-text">
+            > Simplify data
+            <br>
+            > Make programs easier to understand
+        </div>
+    </a>
+
+    <a href="https://rbojja23.github.io/rohan_2025/2024/09/05/Sprint2A-PopCornHAcks_IPYNB_2_.html#section3-3" class="box">
+        Mathematical Expressions
+        <div class="dropdown-text">
+            > Operations involving numbers
+        </div>
+    </a>
+
+    <a href="https://rbojja23.github.io/rohan_2025/2024/09/05/Sprint2A-PopCornHAcks_IPYNB_2_.html#section3-4" class="box">
+        Strings
+        <div class="dropdown-text">
+            > Text with quotes
+            <br>
+            > Can be used to output words
+        </div>
+    </a>
+
+    <a href="https://rbojja23.github.io/rohan_2025/2024/09/05/Sprint2A-PopCornHAcks_IPYNB_2_.html#section3-5" class="box">
+        Boolean Expressions
+        <div class="dropdown-text">
+            > True or False
+            <br>
+            > Decision making
+        </div>
+    </a>
+
+    <a href="https://rbojja23.github.io/rohan_2025/2024/09/05/Sprint2A-PopCornHAcks_IPYNB_2_.html#section3-6" class="box">
+        Conditionals
+        <div class="dropdown-text">
+            > If or else statements
+            <br>
+            > Takes user input
+        </div>
+    </a>
+
+    <a href="https://rbojja23.github.io/rohan_2025/2024/09/05/Sprint2A-PopCornHAcks_IPYNB_2_.html#section3-7" class="box">
+        Nested Conditionals
+        <div class="dropdown-text">
+            > Conditionals in conditionals
+            <br>
+            > Adds complexity
+        </div>
+    </a>
+
+    <a href="https://rbojja23.github.io/rohan_2025/2024/09/05/Sprint2A-PopCornHAcks_IPYNB_2_.html#section3-8" class="box">
+        Iteration
+        <div class="dropdown-text">
+            > Repeat code multiple times
+        </div>
+    </a>
+
+    <a href="https://rbojja23.github.io/rohan_2025/2024/09/05/Sprint2A-PopCornHAcks_IPYNB_2_.html#section3-9" class="box">
+        List Operations
+        <div class="dropdown-text">
+            > Modifying list elements
+        </div>
+    </a>
+
+    <a href="https://rbojja23.github.io/rohan_2025/2024/09/05/Sprint2A-PopCornHAcks_IPYNB_2_.html#section3-10" class="box">
+        Mongols Game!
+        <div class="dropdown-text">
+            > Using all the concepts
+        </div>
+    </a>
+</div>
+
+
+
+<section id="section3-1">
+    <h2>Variables</h2>
+    <p>Content for Variables section...</p>
+</section>
+
+<section id="section3-2">
+    <h2>Data Abstraction</h2>
+    <p>Content for Data Abstraction section...</p>
+</section>
+
+<section id="section3-3">
+    <h2>Mathematical Expressions</h2>
+    <p>Content for Mathematical Expressions section...</p>
+</section>
+
+<section id="section3-4">
+    <h2>Strings</h2>
+    <p>Content for Strings section...</p>
+</section>
+
+<section id="section3-5">
+    <h2>Boolean Expressions</h2>
+    <p>Content for Boolean Expressions section...</p>
+</section>
+
+<section id="section3-6">
+    <h2>Conditionals</h2>
+    <p>Content for Conditionals section...</p>
+</section>
+
+<section id="section3-7">
+    <h2>Nested Conditionals</h2>
+    <p>Content for Nested Conditionals section...</p>
+</section>
+
+<section id="section3-8">
+    <h2>Iteration</h2>
+    <p>Content for Iteration section...</p>
+</section>
+
+<section id="section3-9">
+    <h2>List Operations</h2>
+    <p>Content for List Operations section...</p>
+</section>
+
+<section id="section3-10">
+    <h2>Mongols Game!</h2>
+    <p>Content for the Mongols Game section...</p>
+</section>
+
+
+
+
+
+
 <!-- Liquid:  statements -->
 
 <!-- Include submenu from _includes to top of pages -->
