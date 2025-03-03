@@ -1,0 +1,96 @@
+// Colors
+$background: #fef3dc;
+$text-dark: #3b2213;
+$primary: #ab452f;
+$accent: #f3c03b;
+
+// Base styles
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.background {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+  transition: opacity 0.5s ease;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn, .btn-outline {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: $primary;
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid $primary;
+  color: $primary;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: $text-dark;
+}
+
+.navbar.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.hidden {
+  transform: translateY(-100%);
+}
