@@ -1,4 +1,15 @@
+---
+layout: page
+title: CPT Project
+permalink: /cpt/
+---
+
+
+
+
 <!-- Minimalist Random Quote Generator -->
+
+
 <html>
 <head>
   <style>
