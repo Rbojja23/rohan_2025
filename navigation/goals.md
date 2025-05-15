@@ -4,7 +4,6 @@ title: Goals
 description: Home Page
 permalink: /goals/
 ---
-
 # My Goals
 - Connect my website to an audio database to play a sound of whatever the user speaks.
 - Make an embed for video games
