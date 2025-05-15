@@ -312,12 +312,6 @@ hide: true
   });
 </script>
 
----
-layout: page
-title: CPT Project
-permalink: /cpt/
----
-
 
 
 
