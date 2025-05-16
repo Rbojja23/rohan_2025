@@ -6,7 +6,6 @@ image: /images/mario_animation.png
 hide: true
 ---
 
-<!-- 
 <style>
     .grid-container {
         display: grid;
@@ -132,8 +131,6 @@ hide: true
     </a>
 </div>
 
-
-
 <section id="section3-1">
     <h2>Variables</h2>
     <p>Content for Variables section...</p>
@@ -184,26 +181,6 @@ hide: true
     <p>Content for the Mongols Game section...</p>
 </section>
 
-
-
-
-
-
-<!-- Liquid:  statements -->
-
-<!-- Include submenu from _includes to top of pages -->
-{% include nav/home.html %}
-<!--- Concatenation of site URL to frontmatter image  --->
-{% assign sprite_file = site.baseurl | append: page.image %}
-<!--- Has is a list variable containing mario metadata for sprite --->
-{% assign hash = site.data.mario_metadata %}  
-<!--- Size width/height of Sprit images --->
-{% assign pixels = 256 %}
-
-<!--- HTML for page contains <p> tag named "Mario" and class properties for a "sprite"  -->
-
-
-
 <title>Cookie Clicker!</title>
 <style>
   body {
@@ -242,10 +219,8 @@ hide: true
 <button id="toggle-dark-mode">Toggle Dark Mode</button>
 
 <script>
-  // Data storage using a list to track purchases
   let purchaseHistory = [];
 
-  // Initialize localStorage if not set
   if (localStorage.getItem("counter_value") === null) {
     localStorage.setItem("counter_value", 0);
     localStorage.setItem("cookie_rate", 1);
@@ -262,7 +237,6 @@ hide: true
     audio.play();
   }
 
-  // Student-developed procedure with parameter, sequencing, selection, iteration
   function purchaseUpgrade(upgradeName, rateIncrease, cost) {
     let currentCookies = Number(localStorage.getItem("counter_value"));
     let currentRate = Number(localStorage.getItem("cookie_rate"));
@@ -271,31 +245,25 @@ hide: true
       localStorage.setItem("cookie_rate", currentRate + rateIncrease);
       localStorage.setItem("counter_value", currentCookies - cost);
 
-      // Track upgrade in the list
       purchaseHistory.push(upgradeName);
 
-      // Update visuals
       document.getElementById("rate").innerHTML = `Cookie Rate: ${currentRate + rateIncrease}`;
       document.getElementById("counter").innerHTML = `Counter: ${currentCookies - cost}`;
 
-      // Update grandma army display
       updateGrandmaArmy();
     }
   }
 
-  // Procedure call (used by button)
   function grandmaPress() {
     purchaseUpgrade("Grandma", 5, 10);
   }
 
-  // Iteration and string generation based on list content
   function updateGrandmaArmy() {
     let numGrandmas = purchaseHistory.filter(x => x === "Grandma").length;
     let armyString = "👵".repeat(numGrandmas);
     document.getElementById("grandma-list").innerHTML = `Grandma Army: ${armyString}`;
   }
 
-  // Page load logic (output and state restoration)
   window.onload = function() {
     let counter_storage = localStorage.getItem("counter_value");
     let cookie_rate = localStorage.getItem("cookie_rate");
@@ -306,17 +274,10 @@ hide: true
     updateGrandmaArmy();
   };
 
-  // Dark mode toggle
   document.getElementById('toggle-dark-mode').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
   });
 </script>
-
-
-
-
-<!-- Minimalist Random Quote Generator -->
-
 
 <html>
 <head>
@@ -374,7 +335,6 @@ hide: true
   </div>
 
   <script>
-    // LIST of quotes with authors
     const quotes = [
       { text: "Be yourself; everyone else is already taken.", author: "Oscar Wilde" },
       { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
@@ -383,20 +343,17 @@ hide: true
       { text: "Do what you can, with what you have, where you are.", author: "Theodore Roosevelt" }
     ];
 
-    // PROCEDURE: generates a random quote and updates the HTML
     function generateQuote() {
-      const index = Math.floor(Math.random() * quotes.length); // SELECTION
+      const index = Math.floor(Math.random() * quotes.length);
       const selected = quotes[index];
 
-      // Output to page
       document.getElementById("quote").innerText = `"${selected.text}"`;
       document.getElementById("author").innerText = `- ${selected.author}`;
 
-      // Add a fade effect (ITERATION)
       let opacity = 0;
-      let fade = setInterval(() => {        // ITERATION
+      let fade = setInterval(() => {
         document.querySelector('.quote-container').style.opacity = opacity;
-        opacity += 0.05;                    // SEQUENCING
+        opacity += 0.05;
         if (opacity >= 1) clearInterval(fade);
       }, 30);
     }
